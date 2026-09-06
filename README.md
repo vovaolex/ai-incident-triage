@@ -21,9 +21,20 @@ A Python-based automation project for processing and triaging IT incidents.
 
 ## Project Structure
 
+```text
 ai-incident-triage/
 ├── data/
 ├── src/
 ├── .env
 ├── .gitignore
 └── README.md
+```
+
+## Roadmap
+
+- LLM-based incident classification
+- n8n workflows
+- PostgreSQL
+- RAG knowledge base
+- FastAPI
+- Docker
