@@ -1,0 +1,26 @@
+[
+    {
+        "incident_id": "INC001001",
+        "title": "Laptop failed patching",
+        "description": "Laptop keeps rebooting after Windows patch installation",
+        "impact": 2,
+        "urgency": 2,
+        "priority": "P2"
+    },
+    {
+        "incident_id": "INC001002",
+        "title": "User account locked",
+        "description": "User cannot log in because the account is locked",
+        "impact": 3,
+        "urgency": 2,
+        "priority": "P3"
+    },
+    {
+        "incident_id": "INC001003",
+        "title": "VPN connection failed",
+        "description": "User receives an authentication error when connecting to VPN",
+        "impact": 2,
+        "urgency": 2,
+        "priority": "P2"
+    }
+]

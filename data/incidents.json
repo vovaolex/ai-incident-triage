@@ -1,0 +1,23 @@
+[
+  {
+    "number": "INC001001",
+    "short_description": "Laptop failed patching",
+    "description": "Laptop keeps rebooting after Windows patch installation",
+    "impact": 2,
+    "urgency": 2
+  },
+  {
+    "number": "INC001002",
+    "short_description": "User account locked",
+    "description": "User cannot log in because the account is locked",
+    "impact": 3,
+    "urgency": 2
+  },
+  {
+    "number": "INC001003",
+    "short_description": "VPN connection failed",
+    "description": "User receives an authentication error when connecting to VPN",
+    "impact": 2,
+    "urgency": 2
+  }
+]
