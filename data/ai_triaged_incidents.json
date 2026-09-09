@@ -1,0 +1,47 @@
+[
+    {
+        "number": "INC001001",
+        "short_description": "Laptop failed patching",
+        "description": "Laptop keeps rebooting after Windows patch installation",
+        "impact": 2,
+        "urgency": 2,
+        "ai_category": "Endpoint / Windows Update",
+        "ai_summary": "A laptop repeatedly reboots after installing Windows patches, indicating a post-update boot loop and preventing normal access to the device.",
+        "probable_cause": "A failed, incompatible, or corrupted Windows update may be causing startup failure. Other possibilities include corrupted system files, driver incompatibility, or insufficient disk space during patch installation.",
+        "recommended_actions": [
+            "Boot into Windows Recovery Environment or Safe Mode, then uninstall the most recent quality or feature update and restart the laptop.",
+            "Run Startup Repair and system integrity checks such as SFC and DISM; also review Windows Update and system event logs for the failed patch or related driver errors.",
+            "Verify available disk space and update history, temporarily pause Windows Update, and retry the patch after installing current hardware drivers and confirming the problematic update is approved for the device."
+        ]
+    },
+    {
+        "number": "INC001002",
+        "short_description": "User account locked",
+        "description": "User cannot log in because the account is locked",
+        "impact": 3,
+        "urgency": 2,
+        "ai_category": "Account Access / Authentication",
+        "ai_summary": "A user is unable to log in because their account is currently locked, preventing access to required systems or services. Impact is moderate and urgency is high.",
+        "probable_cause": "The account was likely locked after multiple failed login attempts, potentially due to an incorrect password, expired credentials, a cached password on a device or application, or suspected security activity.",
+        "recommended_actions": [
+            "Verify the user\u2019s identity and review authentication or security logs to confirm the lockout trigger and scope.",
+            "Unlock the account through the approved identity-management or directory administration process; reset the password if needed and confirm the account is enabled and not expired.",
+            "Check for repeated authentication attempts from saved credentials, mobile devices, mapped drives, VPN clients, or other applications, then test the user\u2019s login and monitor for recurrence."
+        ]
+    },
+    {
+        "number": "INC001003",
+        "short_description": "VPN connection failed",
+        "description": "User receives an authentication error when connecting to VPN",
+        "impact": 2,
+        "urgency": 2,
+        "ai_category": "Network Access / VPN Authentication",
+        "ai_summary": "A user is unable to establish a VPN connection because the VPN client returns an authentication error. The issue is limited in scope but prevents the affected user from accessing internal resources remotely.",
+        "probable_cause": "Invalid or expired credentials, an account lockout, expired MFA/token, or a VPN authentication-service issue. A misconfigured VPN profile is also possible.",
+        "recommended_actions": [
+            "Verify the user\u2019s VPN username, password, account status, and whether the account is locked or expired; reset credentials if necessary.",
+            "Confirm MFA or security-token status and ensure the user is approving the correct authentication request and using the current VPN client/profile.",
+            "Review VPN and authentication-server logs for the user\u2019s failed attempts, and test connectivity with a known-good account or device to isolate an account-specific issue from a broader VPN service problem."
+        ]
+    }
+]
